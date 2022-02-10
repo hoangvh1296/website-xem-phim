@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/mani.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KhoPhim</title>
+</head>
+<body>
+    <div id="main" >
+        <div class="modal" id="modal">
+            <div class="modal__body">
+                <!-- chay javascript de tao form -->
+                <div class="animate-item animate-item--1" style="--i:0"></div>
+                <div class="animate-item animate-item--2" style="--i:2"></div>
+                <div class="animate-item animate-item--3" style="--i:3"></div>
+                <div class="animate-item animate-item--4" style="--i:4"></div>
+                <div class="animate-item animate-item--5" style="--i:1"></div>
+                <div class="animate-item animate-item--6" style="--i:3"></div>
+                <!-- form login register -->
+                <div class="form-body">
+                     <header class="form-header">
+                         <button class="btn register-directional">Đăng ký</button>
+                         <button class="btn login-directional">Đăng nhập</button>
+                     </header>
+                     <div class="box-forms">
+                         <!-- register box -->
+                         <div class="register-form-box">
+                             <form action="" id="form-1" method="post">
+                                <div class="form-group ">
+                                    <input id="register-name" class="input-value" type="text" placeholder="Tên Đăng Nhập" >
+                                    <span class="input-message"></span>
+                                </div>
+                                <div class="form-group ">
+                                    <input id="register-pass" class="input-value" type="password" placeholder="Nhập Mật Khẩu">
+                                    <span class="input-message"></span>
+                                </div>
+                                <div class="form-group ">
+                                    <input id="register-rePass" class="input-value" type="password" placeholder="Nhập Lại Mật Khẩu">
+                                    <span class="input-message"></span>
+                                </div>
+                                <div class="form-box__group-btn">
+                                    <button class="btn btn-close-form">Thoát</button>
+                                    <button class="btn btn-send-form">Đăng ký</button>
+                                </div>
+                             </form>
+                         </div>
+                         <!-- login box -->
+                         <div class="login-form-box">
+                            <form action="" id="form-2" method="post">
+                               <div class="form-group ">
+                                   <input id="login-name" class="input-value" type="text" placeholder="Tên Đăng Nhập" >
+                                   <span class="input-message"></span>
+                               </div>
+                               <div class="form-group ">
+                                   <input id="login-pass" class="input-value" type="password" placeholder="Nhập Mật Khẩu">
+                                   <span class="input-message"></span>
+                               </div>
+                               <div class="form-box__group-btn">
+                                   <button class="btn btn-close-form">Thoát</button>
+                                   <button class="btn btn-send-form">Đăng nhập</button>
+                               </div>
+                            </form>
+                        </div>
+                     </div>
+                     <footer class="form-box-footer">
+                        <a href="" class="form-box-footer__facebook">
+                            <i class="fab fa-facebook-square form-box-footer__facebook-icon"></i>
+                            <span  class="form-box-footer__facebook-name">
+                                facebook
+                            </span>
+                        </a>
+                        <a href="" class="form-box-footer__instagram">
+                            <i class="fab fa-google form-box-footer__instagram-icon"></i>
+                            <span  class="form-box-footer__instagram-name">
+                                Google
+                            </span>
+                        </a>
+                    </footer>
+                 </div>
+                 <!-- trailer -->
+                 <!-- <div class="trailer-box">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zb1WyTKYoME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                 </div> -->
+            </div>
+        </div>
+
+    <!-- HEADER -->
+        <header class="header">
+            <div class="grid header__wrapper">
+                <!-- hide on phone -->
+                <div class="top-header hiden-phone">
+                    <ul class="header__navbar-list-account">
+                        <li class="header__navbar-item-account login">
+                            Đăng Nhập
+                        </li>
+                        <li class="header__navbar-item-account register">
+                            Đăng Ký
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-header">
+                <a href="./index.html" class="home-link">
+                    <img src="./assets/images/logo/logo.png" alt="" class="header__logo">
+                </a>
+                <!-- hide on phone -->
+                <div class="header__group-search hiden-phone">
+                        <form action="" method="get" name="search">
+                            <input type="text" class="header__search">
+                            <button class="btn-search">
+                                <i class="ti-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="header__navbar-list-directional">
+                        <li class="header__navbar-item-directional header__navbar-item-directional--active">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Tất Cả Phim
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Bộ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Lẻ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Hoạt Hình
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Chiếu Rạp
+                            </a>
+                        </li>
+                        <!-- display on phone -->
+                        <li class="header__navbar-item-directional display-phone">
+                            <div class="header__group-search">
+                                <form action="" method="get" name="search">
+                                    <input type="text" class="header__search">
+                                    <button class="btn-search">
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item-directional display-phone">
+                            <ul class="header__navbar-list-account">
+                                <li class="header__navbar-item-account login">
+                                    Đăng Nhập
+                                </li>
+                                <li class="header__navbar-item-account register">
+                                    Đăng Ký
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- tablet btn-navbar -->
+                <div class="header__navbar-btn">
+                    <input type="radio" name="" id="nav-btn" hidden="true">
+                    <i class="fas fa-th-list header__navbar-btn-icon"></i>
+                </div>
+                    </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="film-backgruond-img" style="background-image: linear-gradient(rgba(8,27,39,.5),rgba(8,27,39,1)),url(./assets/images/film/violetevergardenthemovie.jpg); ">
+                <div class="film-review">
+                    <div class="grid_row">
+                        <div class="grid_col-4">
+                            <div class="film-review__img" style="background-image:url(./assets/images/film/violetevergardenthemovie.jpg);"></div>
+                        </div>
+                        <div class="grid_col-8">
+                            <div class="film-review__info-film">
+                            <h2 class="film-review__name">violet ever garden the movie</h2>
+                            <div class="film-review__infor">
+                                <ul class="film-review__list-star">
+                                    <li class="film-review__item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="film-review__item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="film-review__item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="film-review__item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="film-review__item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="film-review__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="film-review__year">24/05/2021</span>
+                            </div>
+                            <div class="film-review__group">
+                                <div class="film-review__group-btn">
+                                    <span class="btn film-review__btn film-review__btn--trainer">Trailer</span>
+                                    <a class="btn film-review__btn film-review__btn--view" href="./view.html">Xem phim</a>
+                                </div>
+                                <div class="film-review__group-more-info">
+                                    <ul class="film-review__group-list-more-info">
+                                        <li class="film-review__group-item-more-info"><span>Đạo Điễn: <span>Taichi Ishidate</span></span></li>
+                                        <li class="film-review__group-item-more-info"><span>Quốc Gia: <span> Nhật Bản</span></span></li>
+                                        <li class="film-review__group-item-more-info"><span>Năm: <span> 2021</span></span></li>
+                                        <li class="film-review__group-item-more-info"><span>Thời Lượng: <span> 140 Phút</span></span></li>
+                                        <li class="film-review__group-item-more-info"><span>Chất Lượng: <span> Full HD</span></span></li>
+                                        <li class="film-review__group-item-more-info"><span>Ngôn Ngữ: <span> Vietsud</span></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_fix">
+                <div class="grid_row">
+                    <div class="grid_col-12">
+                    <div class="film-review-main">
+                        <span class="film-review-main__brief">
+                            Kẻ Phản Nghịch (The Rebel 2021) bộ phim Trung Quốc thuộc thể loại hành động, 
+                            gây cấn do đạo diễn Châu Du cầm trịch. Phim xoay quanh câu chuyện cuộc đời, 
+                            sự nghiệp, tình yêu và tình đồng chí của những thanh niên yêu nước. Cùng với
+                            đó là sứ mệnh to lớn trong việc hình thành Tân Trung Quốc của thế hệ trẻ yêu nước.
+                        </span>
+                        <div class="film-review-main__group">
+                            <h2 class="film-review-main__group-heading">
+                                Kẻ Phản Nghịch phim Trung bao ngầu năm 2021
+                            </h2>
+                            <h3 class="film-review-main__group-title">
+                                Nội dung phim
+                            </h3>
+                            <p class="film-review-main__group-info">
+                                Chuyện phim Kẻ Phản Nghịch lấy bối cảnh Trung Quốc vào năm 1936. 
+                                Trong phim, Chu Di Trinh (Đồng Dao thủ vai), người liên lạc của một
+                                cán bộ thuộc Đảng Quốc dân, trong quá trình hoạt động của mình cô luôn
+                                bị Lâm Nam Sênh (Chu Nhất Long đảm nhận) tiếp cận theo dõi. Lâm Nam Sênh
+                                là học viên trẻ tuổi được ban huấn luyện cán bộ Hội Phục Hưng đưa đến Thượng
+                                Hải với mục đích tiếp cận cô. Nào ngờ, trong quá trình hoạt động Lâm Nam Sênh
+                                bị lay động bởi sứ mệnh và tình thần hy sinh vì dân vì nước của các đảng viên 
+                                là Kỷ Trung Nguyên, Chu Di Trinh, Cố Thận Ngôn và trở thành một kẻ Kẻ Phản Nghịch.
+                                Họ khiến anh có suy nghĩ khác về nội bộ Đảng Quốc dân.
+                            </p>
+                            <p class="film-review-main__group-info">
+                                Chuyện phim Kẻ Phản Nghịch lấy bối cảnh Trung Quốc vào năm 1936. 
+                                Trong phim, Chu Di Trinh (Đồng Dao thủ vai), người liên lạc của một
+                                cán bộ thuộc Đảng Quốc dân, trong quá trình hoạt động của mình cô luôn
+                                bị Lâm Nam Sênh (Chu Nhất Long đảm nhận) tiếp cận theo dõi. Lâm Nam Sênh
+                                là học viên trẻ tuổi được ban huấn luyện cán bộ Hội Phục Hưng đưa đến Thượng
+                                Hải với mục đích tiếp cận cô. Nào ngờ, trong quá trình hoạt động Lâm Nam Sênh
+                                bị lay động bởi sứ mệnh và tình thần hy sinh vì dân vì nước của các đảng viên 
+                                là Kỷ Trung Nguyên, Chu Di Trinh, Cố Thận Ngôn và trở thành một kẻ Kẻ Phản Nghịch.
+                                Họ khiến anh có suy nghĩ khác về nội bộ Đảng Quốc dân.
+                            </p>
+                            <p class="film-review-main__group-info">
+                                Chuyện phim Kẻ Phản Nghịch lấy bối cảnh Trung Quốc vào năm 1936. 
+                                Trong phim, Chu Di Trinh (Đồng Dao thủ vai), người liên lạc của một
+                                cán bộ thuộc Đảng Quốc dân, trong quá trình hoạt động của mình cô luôn
+                                bị Lâm Nam Sênh (Chu Nhất Long đảm nhận) tiếp cận theo dõi. Lâm Nam Sênh
+                                là học viên trẻ tuổi được ban huấn luyện cán bộ Hội Phục Hưng đưa đến Thượng
+                                Hải với mục đích tiếp cận cô. Nào ngờ, trong quá trình hoạt động Lâm Nam Sênh
+                                bị lay động bởi sứ mệnh và tình thần hy sinh vì dân vì nước của các đảng viên 
+                                là Kỷ Trung Nguyên, Chu Di Trinh, Cố Thận Ngôn và trở thành một kẻ Kẻ Phản Nghịch.
+                                Họ khiến anh có suy nghĩ khác về nội bộ Đảng Quốc dân.
+                            </p>
+                        </div>
+                        <div class="film-review-main__img" style="background-image: url(./assets/images/film/VioletEvergarden.jpg);">
+                        </div>
+                        <div class="film-review-main__group">
+                            <h2 class="film-review-main__group-heading">
+                                Kẻ Phản Nghịch phim Trung bao ngầu năm 2021
+                            </h2>
+                            <h3 class="film-review-main__group-title">
+                                Nội dung phim
+                            </h3>
+                            <p class="film-review-main__group-info">
+                                Chuyện phim Kẻ Phản Nghịch lấy bối cảnh Trung Quốc vào năm 1936. 
+                                Trong phim, Chu Di Trinh (Đồng Dao thủ vai), người liên lạc của một
+                                cán bộ thuộc Đảng Quốc dân, trong quá trình hoạt động của mình cô luôn
+                                bị Lâm Nam Sênh (Chu Nhất Long đảm nhận) tiếp cận theo dõi. Lâm Nam Sênh
+                                là học viên trẻ tuổi được ban huấn luyện cán bộ Hội Phục Hưng đưa đến Thượng
+                                Hải với mục đích tiếp cận cô. Nào ngờ, trong quá trình hoạt động Lâm Nam Sênh
+                                bị lay động bởi sứ mệnh và tình thần hy sinh vì dân vì nước của các đảng viên 
+                                là Kỷ Trung Nguyên, Chu Di Trinh, Cố Thận Ngôn và trở thành một kẻ Kẻ Phản Nghịch.
+                                Họ khiến anh có suy nghĩ khác về nội bộ Đảng Quốc dân.
+                            </p>
+                            <p class="film-review-main__group-info">
+                                Chuyện phim Kẻ Phản Nghịch lấy bối cảnh Trung Quốc vào năm 1936. 
+                                Trong phim, Chu Di Trinh (Đồng Dao thủ vai), người liên lạc của một
+                                cán bộ thuộc Đảng Quốc dân, trong quá trình hoạt động của mình cô luôn
+                                bị Lâm Nam Sênh (Chu Nhất Long đảm nhận) tiếp cận theo dõi. Lâm Nam Sênh
+                                là học viên trẻ tuổi được ban huấn luyện cán bộ Hội Phục Hưng đưa đến Thượng
+                                Hải với mục đích tiếp cận cô. Nào ngờ, trong quá trình hoạt động Lâm Nam Sênh
+                                bị lay động bởi sứ mệnh và tình thần hy sinh vì dân vì nước của các đảng viên 
+                                là Kỷ Trung Nguyên, Chu Di Trinh, Cố Thận Ngôn và trở thành một kẻ Kẻ Phản Nghịch.
+                                Họ khiến anh có suy nghĩ khác về nội bộ Đảng Quốc dân.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="grid_row" id="responsive-item-film">
+                    <div class="grid_col-12">
+                        <h2 class="film-recommend-title">Có Thể Bạn Cũng Muỗn Xem</h2>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="grid_col-2-4">
+                        <div class="item-film-recommend">
+                            <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                            </a>
+                            <ul class="list-star item-film-recommend_list-star">
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                <li class="item-star"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tags"></i> Phim Hoạt Hình
+                            </a>
+                            <span class="item-film-recommend__name">
+                                Violet Evergarden: Hồi Ức Không Quên (2021)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_col-3">
+                        <ul class="footer__list">
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Liên Hệ</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Giới Thiệu</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Bản Quyền</li></a>
+                        </ul>
+                    </div>
+                    <div class="grid_col-3">
+                        <ul class="footer__list">
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Liên Hệ</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Giới Thiệu</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Bản Quyền</li></a>
+                        </ul>
+                    </div>
+                    <div class="grid_col-3">
+                        <ul class="footer__list">
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item"><i class="fab fa-facebook-square"></i>Liên Hệ</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item"><i class="fab fa-twitter"></i>Giới Thiệu</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item"><i class="fab fa-instagram-square"></i>Bản Quyền</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script tyle="text/javascript" src="./assets/JS/main.js"></script>
+</html>

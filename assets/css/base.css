@@ -1,0 +1,211 @@
+:root {
+    --primary-color:#f1b722;
+    --secondary-color:rgba(8,27,39,1);
+    --secondary-color-transparent: rgba(8, 27, 39, 0.192);
+    --text-color-header:white;
+    --text-color:#bdb0b0;
+    --background-color: rgba(41, 38, 38, 0.74);
+    --box-shadow:1px 0px 6px 0px #fefefea1;
+    --header-background-color: rgb(12, 42, 61);
+    --box-shadow-inside: box-shadow: 1px 1px 3px 0 rgb(0 0 0 / 40%), inset 0 1px 0 0 hsl(0deg 0% 100% / 10%);
+}
+@keyframes animateForm {
+    0%,100% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform:scale(.5,.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+@keyframes scaleOut {
+    0% {
+        opacity: 1;
+        transform:scale(1,1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.5,.5);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(222, 233, 233);
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(71, 71, 71, 0.815);
+}
+.btn {
+    margin: 0;
+    padding:10px 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color-header);
+    outline: none;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+.btn+.btn {
+    margin-left: 10px;
+}
+.btn:hover {
+    filter: brightness(100%)!important;
+}
+.btn--active {
+    background-color: var(--primary-color);
+    filter: brightness(100%);
+    color: var(--text-color-header)!important;
+}
+.grid {
+    width: 75em;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid_fix {
+    width: 75em;
+    max-width: calc(100% - 24px);
+    margin: 0 auto;
+}
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.grid_col-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_col-4 {
+    width: 33.3334%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_col-8 {
+    width: 66.6667%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_col-9 {
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_col-2-4 {
+    width: 20%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_padding-top {
+    padding-top: 100px;
+}
+/* modal */
+.modal {
+    display: none; 
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgb(232 76 76 / 85%),rgb(27 45 177 / 91%));
+    overflow: hidden;
+}
+.modal::before {
+    content: "";
+    display: block;
+    width: 500px ;
+    height: 500px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top:0;
+    left:calc(0% + 120px);
+    filter: blur(145px);
+}
+.modal::after {
+    content: "";
+    display: block;
+    width: 700px ;
+    height: 500px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: calc(0% + 200px);
+    right:calc(0% + 120px);
+    filter: blur(200px);
+}
+.modal__body {
+    border-radius: 6px;
+    display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity .6s ease;
+    z-index: 10;
+}
+.list-star {
+    list-style-type: none;
+    color: white;
+    display: flex;
+}
+.item-star {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.star--active {
+    color: var(--primary-color);
+}

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/mani.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KhoPhim</title>
+</head>
+<body>
+    <div id="main" >
+        <div class="modal" id="modal">
+            <div class="modal__body">
+                <!-- chay javascript de tao form -->
+                <div class="animate-item animate-item--1" style="--i:0"></div>
+                <div class="animate-item animate-item--2" style="--i:2"></div>
+                <div class="animate-item animate-item--3" style="--i:3"></div>
+                <div class="animate-item animate-item--4" style="--i:4"></div>
+                <div class="animate-item animate-item--5" style="--i:1"></div>
+                <div class="animate-item animate-item--6" style="--i:3"></div>
+                <div class="form-body">
+                     <header class="form-header">
+                         <button class="btn register-directional">Đăng ký</button>
+                         <button class="btn login-directional">Đăng nhập</button>
+                     </header>
+                     <div class="box-forms">
+                         <!-- register box -->
+                         <div class="register-form-box">
+                             <form action="" id="form-1" method="post">
+                                <div class="form-group ">
+                                    <input id="register-name" class="input-value" type="text" placeholder="Tên Đăng Nhập" >
+                                    <span class="input-message"></span>
+                                </div>
+                                <div class="form-group ">
+                                    <input id="register-pass" class="input-value" type="password" placeholder="Nhập Mật Khẩu">
+                                    <span class="input-message"></span>
+                                </div>
+                                <div class="form-group ">
+                                    <input id="register-rePass" class="input-value" type="password" placeholder="Nhập Lại Mật Khẩu">
+                                    <span class="input-message"></span>
+                                </div>
+                                <div class="form-box__group-btn">
+                                    <button class="btn btn-close-form">Thoát</button>
+                                    <button class="btn btn-send-form">Đăng ký</button>
+                                </div>
+                             </form>
+                         </div>
+                         <!-- login box -->
+                         <div class="login-form-box">
+                            <form action="" id="form-2" method="post">
+                               <div class="form-group ">
+                                   <input id="login-name" class="input-value" type="text" placeholder="Tên Đăng Nhập" >
+                                   <span class="input-message"></span>
+                               </div>
+                               <div class="form-group ">
+                                   <input id="login-pass" class="input-value" type="password" placeholder="Nhập Mật Khẩu">
+                                   <span class="input-message"></span>
+                               </div>
+                               <div class="form-box__group-btn">
+                                   <button class="btn btn-close-form">Thoát</button>
+                                   <button class="btn btn-send-form">Đăng nhập</button>
+                               </div>
+                            </form>
+                        </div>
+                     </div>
+                     <footer class="form-box-footer">
+                        <a href="" class="form-box-footer__facebook">
+                            <i class="fab fa-facebook-square form-box-footer__facebook-icon"></i>
+                            <span  class="form-box-footer__facebook-name">
+                                facebook
+                            </span>
+                        </a>
+                        <a href="" class="form-box-footer__instagram">
+                            <i class="fab fa-google form-box-footer__instagram-icon"></i>
+                            <span  class="form-box-footer__instagram-name">
+                                Google
+                            </span>
+                        </a>
+                    </footer>
+                 </div>
+
+                 <!-- <div class="login-body">
+                    <header class="login-header">
+                        <h2 class="login-header__title">Đăng ký</h2>
+                        <button class="btn login-directional">Đăng ký</button>
+                    </header>
+                    <div class="login-form-box">
+                        <form action="" id="form-2" method="post">
+                           <div class="form-group ">
+                               <input class="input-value" type="text" placeholder="Tên Đăng Nhập" >
+                               <span class="input-message">asdsad</span>
+                           </div>
+                           <div class="form-group ">
+                               <input class="input-value" type="password" placeholder="Nhập Mật Khẩu">
+                               <span class="input-message">dadasdas</span>
+                           </div>
+                           <div class="login-form-box__group-btn">
+                               <button class="btn btn-close">Thoát</button>
+                               <button class="btn btn-send">Đăng nhập</button>
+                           </div>
+                        </form>
+                    </div>
+                    <footer class="register-footer">
+                       <a href="" class="register-footer__facebook">
+                           <i class="fab fa-facebook-square register-footer__facebook-icon"></i>
+                           <span  class="register-footer__facebook-name">
+                               facebook
+                           </span>
+                       </a>
+                       <a href="" class="register-footer__instagram">
+                           <i class="fab fa-google register-footer__instagram-icon"></i>
+                           <span  class="register-footer__instagram-name">
+                               Google
+                           </span>
+                       </a>
+                   </footer>
+                </div> -->
+            </div>
+         </div>
+    <!-- HEADER -->
+        <header class="header">
+            <div class="grid header__wrapper">
+                <!-- hide on phone -->
+                <div class="top-header hiden-phone">
+                    <ul class="header__navbar-list-account">
+                        <li class="header__navbar-item-account login">
+                            Đăng Nhập
+                        </li>
+                        <li class="header__navbar-item-account register">
+                            Đăng Ký
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-header">
+                <a href="./index.html" class="home-link">
+                    <img src="./assets/images/logo/logo.png" alt="" class="header__logo">
+                </a>
+                <!-- hide on phone -->
+                <div class="header__group-search hiden-phone">
+                        <form action="" method="get" name="search">
+                            <input type="text" class="header__search">
+                            <button class="btn-search">
+                                <i class="ti-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="header__navbar-list-directional">
+                        <li class="header__navbar-item-directional header__navbar-item-directional--active">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Tất Cả Phim
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Bộ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Lẻ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Hoạt Hình
+                            </a>
+                        </li>
+                        <li class="header__navbar-item-directional">
+                            <a href="" class="header__navbar-item-link-directional">
+                                Phim Chiếu Rạp
+                            </a>
+                        </li>
+                        <!-- display on phone -->
+                        <li class="header__navbar-item-directional display-phone">
+                            <div class="header__group-search">
+                                <form action="" method="get" name="search">
+                                    <input type="text" class="header__search">
+                                    <button class="btn-search">
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item-directional display-phone">
+                            <ul class="header__navbar-list-account">
+                                <li class="header__navbar-item-account login">
+                                    Đăng Nhập
+                                </li>
+                                <li class="header__navbar-item-account register">
+                                    Đăng Ký
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- tablet btn-navbar -->
+                <div class="header__navbar-btn">
+                    <input type="radio" name="" id="nav-btn" hidden="true">
+                    <i class="fas fa-th-list header__navbar-btn-icon"></i>
+                </div>
+                    </div>
+            </div>
+        </header>
+        <div class="container">
+                <div class= "film-backgruond-img" style="background-image: linear-gradient(rgba(8,27,39,.5),rgba(8,27,39,1)),url(./assets/images/film/violetevergardenthemovie.jpg); ">
+                    <div class="grid_fix">
+                        <div class="grid_row grid_padding-top">
+                            <div class="grid_col-12">
+                                <div class="navigation-bav">
+                                    <span class="navigation-bav__item">
+                                        <a href="./index.html">trang chủ</a>
+                                    </span>
+                                    <span class="navigation-bav__item">
+                                        <i class="ti-angle-right"></i>
+                                        <a href="">phim hoạt hình</a>
+                                    </span>
+                                    <span class="navigation-bav__item">
+                                        <i class="ti-angle-right"></i>
+                                        <a href="./review.html">violet ever garden the movie</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_row">
+                            <div class="grid_col-8" id="tab-phone">
+                                <div class="group-info-film grid_margin-top">
+                                    <h2 class="name-film">
+                                        Phim: violet ever garden the movie
+                                    </h2> 
+                                    <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zb1WyTKYoME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe> -->
+                                    <video class="video" src="./assets/vodeos/trailers/y2mate.com - Evangelion 3010  Theme Song FullOne Last Kissby Hikaru Utada_1080pFHR (1).mp4" controls>
+                                    </video>
+                                    <div class="group-info-film__ep">
+                                        <h3 class="group-info-film__title">
+                                            chọn tập phim
+                                        </h3>
+                                        <div class="group-info-film__total-ep">
+                                            <a href="" class="btn group-info-film__ep-item">1</a>
+                                            <a href="" class="btn group-info-film__ep-item">2</a>
+                                            <a href="" class="btn group-info-film__ep-item">3</a>
+                                            <a href="" class="btn group-info-film__ep-item">4</a>
+                                            <a href="" class="btn group-info-film__ep-item">5</a>
+                                            <a href="" class="btn group-info-film__ep-item">6</a>
+                                            <a href="" class="btn group-info-film__ep-item">7</a>
+                                            <a href="" class="btn group-info-film__ep-item">8</a>
+                                            <a href="" class="btn group-info-film__ep-item">9</a>
+                                            <a href="" class="btn group-info-film__ep-item">10</a>
+                                            <a href="" class="btn group-info-film__ep-item">11</a>
+                                            <a href="" class="btn group-info-film__ep-item">12</a>
+                                            <a href="" class="btn group-info-film__ep-item">13</a>
+                                            <a href="" class="btn group-info-film__ep-item">14</a>
+                                            <a href="" class="btn group-info-film__ep-item">15</a>
+                                            <a href="" class="btn group-info-film__ep-item">16</a>
+                                            <a href="" class="btn group-info-film__ep-item">17</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid_col-4"  id="hiden-sidebar">
+                                <div class="grid_row">
+                                    <div class="grid_col-12">
+                                        <div class="sidebar grid_margin-top">
+                                            <h2 class="sidebar__title">
+                                                top phim
+                                            </h2>
+                                            <ul class="sidebar__list-items">
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="sidebar__item">
+                                                    <a href="" class="sidebar__item-poster" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                    </a>
+                                                    <div class="sidebar__item-info">
+                                                        <a href="" class="sidebar__item-info-name">
+                                                            violet ever garden the movie
+                                                        </a>
+                                                        <ul class="list-star">
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star star--active sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                            <i class="fas fa-star item-star sidebar__item-info-rating"></i>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_fix">
+                    <!-- comment -->
+                    <div class="grid_row">
+                        <div class="grid_col-8" id="respomsive-comment">
+                            <div class="comment">
+                                <header class="comment__header">
+                                    <h2 class="comment__header-title">
+                                        bình luận về phim
+                                    </h2>
+                                </header>
+                                <div class="comment__body">
+                                    <div class="comment__body-top">
+                                        <span class="comment__body-top-num-comment">
+                                            2222 <span>comments</span>
+                                        </span>
+                                        <select name="filter" id="">
+                                            <option value="total">toàn bộ</option>
+                                            <option value="new">mới nhất</option>
+                                            <option value="old">cũ nhất</option>
+                                        </select>
+                                    </div>
+                                    <div class="comment__body-main">
+                                        <div class="comment__write-comment">
+                                            <div class="comment__write-comment-avatar" style="background-image: url(./assets/images/film/product1.jpg);"></div>
+                                            <div id="form-write-comment">
+                                                <textarea class="write-comment" placeholder="Nhập bình Luận"  name="" id="" cols="30" rows="3"></textarea>
+                                                <button class="btn write-comment-post">Đăng</button>
+                                            </div>
+                                        </div>
+                                        <ul class="comment__list-comments">
+                                           <!-- javascript -->
+                                            <li class="comment__item-comment">
+                                                <div class="comment__item-comment-avatar" style="background-image: url(./assets/images/film/VioletEvergarden.jpg);">
+                                                </div>
+                                                <div class="comment__item-comment-info">
+                                                    <h2 class="comment__item-comment-name-user">
+                                                        sdfsd
+                                                    </h2>
+                                                    <span class="comment__item-comment-post">
+                                                        fsdfsd
+                                                    </span>
+                                                    <div class="comment__item-comment-interact">
+                                                        <span class="comment__item-comment-interact-like">
+                                                            26 <i class="fas fa-thumbs-up"></i>
+                                                        </span>
+                                                        <span class="comment__item-comment-interact-reply">
+                                                            Reply
+                                                        </span>
+                                                        <!-- write reply -->
+                                                        <div class="comment__write-recomment">
+                                                            <div class="comment__write-recomment-avatar" style="background-image: url(./assets/images/film/product1.jpg);">
+                                                            </div>
+                                                                <div id="form-write-recomment">
+                                                                    <textarea class="write-recomment" placeholder="Nhập bình Luận"  name="" id=""  rows="3"></textarea>
+                                                                    <button class="btn write-recomment-post">Đăng</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="comment__list-recomments">
+                                                    <li class="comment__item-recomment">
+                                                        <div class="comment__item-recomment-avatar" style="background-image: url(./assets/images/film/violetevergardenthemovie.jpg);">
+                                                        </div>
+                                                        <div class="comment__item-recomment-info">
+                                                            <h2 class="comment__item-recomment-name-user">
+                                                            asdasdsad
+                                                            </h2>
+                                                            <span class="comment__item-recomment-post">
+                                                                dasdasd
+                                                            </span>
+                                                            <div class="comment__item-recomment-interact">
+                                                                <span class="comment__item-recomment-interact-like">
+                                                                    26 <i class="fas fa-thumbs-up"></i>
+                                                                </span>
+                                                                <span class="comment__item-recomment-interact-reply">
+                                                                    Reply
+                                                                </span>
+                                                                <!-- write reply -->
+                                                                <div class="comment__write-recomment">
+                                                                    <div class="comment__write-recomment-avatar" style="background-image: url(./assets/images/film/product1.jpg);">
+                                                                    </div>
+                                                                    <div id="form-write-recomment">
+                                                                        <textarea class="write-recomment" placeholder="Nhập bình Luận"  name="" id=""  rows="3"></textarea>
+                                                                        <button class="btn write-recomment-post">Đăng</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <footer class="comment__footer">
+                                    <button class="btn comment__footer-btn">Doc Them Binh Luan</button>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_row bottom-page-view" id="responsive-item-film">
+                        <div class="grid_col-12">
+                            <h2 class="film-recommend-title">Có Thể Bạn Cũng Muỗn Xem</h2>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grid_col-2-4">
+                            <div class="item-film-recommend">
+                                <a href="./review.html" class="item-film-recommend__poster" style="background-image:url(./assets/images/film/VioletEvergarden.jpg);">
+                                </a>
+                                <ul class="list-star item-film-recommend_list-star">
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star star--active"><i class="fas fa-star"></i></li>
+                                    <li class="item-star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <a class="item-film-recommend__link-category" href="http://" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-tags"></i> Phim Hoạt Hình
+                                </a>
+                                <span class="item-film-recommend__name">
+                                    Violet Evergarden: Hồi Ức Không Quên (2021)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_col-3">
+                        <ul class="footer__list">
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Liên Hệ</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Giới Thiệu</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Bản Quyền</li></a>
+                        </ul>
+                    </div>
+                    <div class="grid_col-3">
+                        <ul class="footer__list">
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Liên Hệ</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Giới Thiệu</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item">Bản Quyền</li></a>
+                        </ul>
+                    </div>
+                    <div class="grid_col-3">
+                        <ul class="footer__list">
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item"><i class="fab fa-facebook-square"></i>Liên Hệ</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item"><i class="fab fa-twitter"></i>Giới Thiệu</li></a>
+                            <a href="http://" class="footer__list-link"><li class="footer__list-item"><i class="fab fa-instagram-square"></i>Bản Quyền</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script  src="./assets/JS/main.js"></script>
+</html>
